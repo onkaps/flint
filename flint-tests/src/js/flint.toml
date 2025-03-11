@@ -1,10 +1,15 @@
 [flint]
 version = 1
 
+[common.indent]
+indent_style = "spaces"                             # Options: "spaces", "tabs"
+indent_size = 4
+switch_case = 5
+function_declaration = { body = 2, parameters = 3 }
+
 [common]
 # Basic style settings
-indent_style = "spaces"
-indent_size = 2
+
 max_line_length = 100
 quote_style = "double"
 require_semicolons = true
