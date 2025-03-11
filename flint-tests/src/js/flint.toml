@@ -9,7 +9,6 @@ function_declaration = { body = 2, parameters = 3 }
 
 [common]
 # Basic style settings
-
 max_line_length = 100
 quote_style = "double"
 require_semicolons = true
@@ -20,8 +19,24 @@ function_case = "camelCase"
 class_case = "PascalCase"
 constant_case = "UPPER_CASE"
 
+# Whitespace rules
+no_trailing_spaces = true
+no_multiple_empty_lines = true
+space_before_blocks = true
+
+# Operator and syntax styling (cross-language)
+indent_binary_ops = true
+operator_linebreak = "before"
+
 
 [rules.eslint]
+arrow-parens = "always"
+arrow-spacing = "consistent"
+jsx-quotes = "prefer-double"
+object-curly-spacing = "always"
+array-bracket-spacing = "never"
+space-before-function-paren = "never"
+wrap-iife = "inside"
 
 [config.eslint]
 root = "./flint-tests/src/js"
